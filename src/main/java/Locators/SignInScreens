@@ -1,0 +1,14 @@
+# Home Page Screen
+btn_MyAccount=Xpath:.//*[@id='account']/a
+btn_LogOut=Xpath:.//*[@id='account_logout']
+
+# Login Screen
+btnExistingUsers = Name:Existing Users
+btnSkipIntroduce = Name:Skip
+tbPassWord = Name:Password
+btnSignIn = Name:Sign In
+tbUserName = Name:Username
+popupSignInFail_1= Name:Incorrect password/username. Please try again
+popupSignInFail_2 = Name:Password is invalid. Password length must be between 6 and 32 characters.
+btnOK = Name:OK
+backicon = Name:\uE099

@@ -1,0 +1,15 @@
+
+# Sign Up Screen
+btnSkipIntroduce = Name:Skip
+btnNewUser_SignUp = Name:New User - Sign Up
+tbPassWord = Name:Password
+tbUserName = Name:Username
+btnSignUp = Name:Sign Up
+popupSignUpFail_0 = Name:Sorry, it appears that this username is already registered by someone else. Try another?
+popupSignUpFail_1= Name:Username must have at least 3 characters
+popupSignUpFail_2 = Name:Password is invalid. Password length must be between 6 and 32 characters.
+popupSignUpFail_3 = Name:Only letters, numbers, underscores, and one period are allowed
+popupEmptyUsername = Name:Username is empty
+
+btnOK = Name:OK
+backicon = Name:\uE099
