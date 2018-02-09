@@ -14,17 +14,18 @@ public class SignUpScripts extends SetupServer{
         super.SetUp(capabilities);
     }
     @Test
-    public void SignUpFailure () throws  Exception{
-        SignUpKeywords signup = new SignUpKeywords(this,reporter);
-        signup.SignUpFailure();
-    }
-    @Test
     public void SignUp () throws  Exception{
         SignUpKeywords signup = new SignUpKeywords(this,reporter);
         signup.SigUpSuccess();
     }
+    @Test
+    public void SignUpFailure () throws  Exception{
+        SignUpKeywords signup = new SignUpKeywords(this,reporter);
+        signup.SignUpFailure();
+    }
+
     @AfterMethod
     public void cleanUp(){
-
+      // driver.runAppInBackground(2);
     }
 }

@@ -13,19 +13,6 @@ public abstract class CapacibilityAbstract implements Capabilities {
     private String _orientation;
     private String _urlAppium;
 
-
-//
-//    public CapacibilityAbstract(String platformName, String platformVersion, String deviceName, Boolean noReset,
-//                                String automationName, Boolean showXcodeLog, String orientation) {
-//        this._platformName = platformName;
-//        this._platformVersion = platformVersion;
-//        this._deviceName = deviceName;
-//        this._noReset = noReset;
-//        this._automationName = automationName;
-//        this._showXcodeLog = showXcodeLog;
-//        this._orientation = orientation;
-//    }
-
     public CapacibilityAbstract(String device)
     {
         // Read and parse Json devices file
@@ -50,11 +37,6 @@ public abstract class CapacibilityAbstract implements Capabilities {
         catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-
-    public CapacibilityAbstract() {
-
     }
 
     public String getPlatformName() {

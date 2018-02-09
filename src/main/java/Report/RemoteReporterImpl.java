@@ -17,7 +17,7 @@ public class RemoteReporterImpl implements RemoteReporter {
     }
 
     public void report(String message) {
-        //api.call(new SlackMessage(channel, sender, message));
+        api.call(new SlackMessage(channel, sender, message));
         System.out.println(message);
     }
 }
