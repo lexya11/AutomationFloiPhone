@@ -13,7 +13,7 @@ public abstract class CapacibilityAbstract implements Capabilities {
     private String _orientation;
     private String _urlAppium;
 
-    public CapacibilityAbstract(String device)
+    public CapacibilityAbstract (String device)
     {
         // Read and parse Json devices file
         JSONParser parser = new JSONParser();

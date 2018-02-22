@@ -1,7 +1,3 @@
-# Home Page Screen
-btn_MyAccount=Xpath:.//*[@id='account']/a
-btn_LogOut=Xpath:.//*[@id='account_logout']
-
 # Login Screen
 btnExistingUsers = Name:Existing Users
 btnSkipIntroduce = Name:Skip

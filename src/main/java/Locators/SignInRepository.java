@@ -3,9 +3,7 @@ package Locators;
 import java.io.FileInputStream;
 import java.util.Properties;
 import Environments.Constants;
-import io.appium.java_client.TouchAction;
 import org.openqa.selenium.By;
-import org.yaml.snakeyaml.events.Event;
 
 public class SignInRepository {
     public static Properties SignInScreen;

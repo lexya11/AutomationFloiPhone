@@ -18,7 +18,7 @@ public class LoginKeywords {
         this.login = new SignInRepository();
     }
 
-    public void loginSuccess(String userName, String passWord) throws Exception {
+    public void loginSuccess(String userName, String passWord) {
 
         reporter.report("Started Login Success keywords");
 //        MobileElement btnSkip = inspector.findElement(LoginRepo.getLocator("btnSkipIntroduce"));
@@ -48,7 +48,7 @@ public class LoginKeywords {
 
         }
     }
-    public void LoginFail() throws  Exception {
+    public void LoginFail() {
         reporter.report("Started Login Fail keywords");
         MobileElement btnSkip = inspector.findElement(login.getElement("btnSkipIntroduce"));
         btnSkip.click();
@@ -61,16 +61,13 @@ public class LoginKeywords {
         if (btnSignIn.isDisplayed() == true)
         {
             reporter.report("Show Login screen correctly!");
-            reporter.report("Input username & password");
-
+            reporter.report("Login Fail With Incorrect Username");
             MobileElement tbUserName = inspector.findElement(login.getElement("tbUserName"));
             tbUserName.clear();
-            tbUserName.setValue("bi_test04");
-
+            tbUserName.setValue("bi_test");
             MobileElement tbPassWord = inspector.findElement(login.getElement("tbPassWord"));
             tbPassWord.clear();
             tbPassWord.setValue("111111");
-
             inspector.findTouchActionTap(30,275);
             try {
                 TimeUnit.SECONDS.sleep(3);
@@ -80,9 +77,22 @@ public class LoginKeywords {
             MobileElement popupSignInFail_1 = inspector.findElement(login.getElement("popupSignInFail_1"));
 
             if (popupSignInFail_1.isDisplayed() == true){
-                reporter.report("=== Show popup Incorrect password/Username ===");
+                reporter.report("=== Show popup: Incorrect password/Username. Please try again ===");
                 MobileElement btnOK = inspector.findElement(login.getElement("btnOK"));
                 btnOK.click();
+
+                reporter.report("Login Fail With Incorrect Password");
+                tbUserName.clear();
+                tbUserName.setValue("bi_test04");
+                tbPassWord.clear();
+                tbPassWord.setValue("111 111");
+                inspector.findTouchActionTap(30,275);
+
+                if (popupSignInFail_1.isDisplayed() == true){
+                    reporter.report("=== Show popup: Incorrect password/Username. Please try again ===");
+                    btnOK.click();
+                }
+                reporter.report("Login Fail With Invalid Password");
                 tbUserName.clear();
                 tbUserName.setValue("bi_test04");
                 tbPassWord.clear();

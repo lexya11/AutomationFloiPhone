@@ -25,7 +25,7 @@ public class SignUpRepository {
             e.printStackTrace();
         }
     }
-    public By getElement(String key)
+    public By getElement (String key)
     {
         String locatorProperty = SignUpScreen.getProperty(key);
         String ElementType = locatorProperty.split(":")[0];

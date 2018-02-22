@@ -1,0 +1,12 @@
+{
+
+  "Email Compose":
+  {
+    "btnEmailiCon": "icon 1",
+    "btnCompose": "\uE04E",
+    "tbTo": "To:",
+    "tbSubject": "//XCUIElementTypeTable[1]/XCUIElementTypeCell[5]/XCUIElementTypeTextField[1]",
+    "btnSend": "//XCUIElementTypeNavigationBar[1]/XCUIElementTypeButton[3]",
+    "tbContent": "//XCUIElementTypeWebView[1]/XCUIElementTypeOther[1]"
+  }
+}

@@ -8,24 +8,27 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class SignUpScripts extends SetupServer{
+    TabletCapabilities capabilities;
+    SignUpKeywords signup;
     @BeforeMethod
     public void Setup(){
-        TabletCapabilities capabilities = new TabletCapabilities("iPhone 8 Plus");
+        capabilities = new TabletCapabilities("iPhone 8 Plus");
         super.SetUp(capabilities);
     }
     @Test
     public void SignUp () throws  Exception{
-        SignUpKeywords signup = new SignUpKeywords(this,reporter);
+        signup = new SignUpKeywords(this,reporter);
         signup.SigUpSuccess();
     }
     @Test
     public void SignUpFailure () throws  Exception{
-        SignUpKeywords signup = new SignUpKeywords(this,reporter);
+        signup = new SignUpKeywords(this,reporter);
         signup.SignUpFailure();
     }
 
     @AfterMethod
     public void cleanUp(){
-      // driver.runAppInBackground(2);
+    //  driver.runAppInBackground(2);
+        driver.closeApp();
     }
 }

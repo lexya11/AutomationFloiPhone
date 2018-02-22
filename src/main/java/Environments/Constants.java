@@ -4,7 +4,7 @@ public final class Constants {
     // Framework path
     public static String ElementSignInScreen = "/src/main/java/Locators/SignInScreens";
     public static String ElementSignUpScreen = "/src/main/java/Locators/SignUpScreens";
-
+    public static String ElementEmailComposeScreen = "/src/main/java/Locators/EmailComposeScreens";
 
     // Capabilities constant variables
     public static final String app = "/Users/Bi/Desktop/testappium/FloQC.app";

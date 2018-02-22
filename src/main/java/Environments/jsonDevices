@@ -8,15 +8,15 @@
     "automationName": "XCUITest",
     "showXcodeLog": true,
     "noReset": true
+  },
+  "iPhone 8 Plus":
+  {
+    "platformName": "iOS",
+    "platformVersion": "11.2",
+    "deviceName": "iPhone 8 Plus",
+    "automationName": "XCUITest",
+    "showXcodeLog": true,
+    "urlAppium": "http://0.0.0.0:4723/wd/hub",
+    "noReset": true
   }
-   "iPhone 8 Plus":
-    {
-      "platformName": "iOS",
-      "platformVersion": "11.2",
-      "deviceName": "iPhone 8 Plus",
-      "automationName": "XCUITest",
-      "showXcodeLog": true,
-      "urlAppium": "http://0.0.0.0:4723/wd/hub",
-      "noReset": false
-    }
 }

@@ -31,6 +31,6 @@ public class SignInScripts extends SetupServer{
 
     @AfterMethod
     public void cleanUp(){
-
+        driver.closeApp();
     }
 }

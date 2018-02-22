@@ -32,7 +32,6 @@ public class SetupServer implements ElementInspector{
             URL remoteUrl = new URL(capabilities.getURL());
             driver = new IOSDriver(remoteUrl, caps);
 
-
             reporter = new RemoteReporterImpl(Constants.service, Constants.channel,Constants.sender);
         } catch(Exception e){
             e.printStackTrace();

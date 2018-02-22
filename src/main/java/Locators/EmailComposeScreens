@@ -1,0 +1,30 @@
+
+# Email Compose Screen
+btnEmailiCon = Name:icon 1
+btnCompose = Name = "\uE04E"
+btnCancel = Name:
+btnBearTrack = Name:
+btnSend = Xpath://XCUIElementTypeNavigationBar[@name="New Email"]/XCUIElementTypeButton[3]
+btnExpand/Collapse = Name:\uE09B
+titleEmail = Name:
+tbFrom = Name:From:
+tbTo = Xpath://XCUIElementTypeStaticText[@name="To:"]
+tbCc = Name:"Cc:"
+tbBcc = Name:Bcc:
+tbSubject = Xpath://XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeWebView/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeTextField
+tbContent = Name:
+popupBearTrack = Name:Remind me if I don't get a reply within
+trackingtime1hr = Name:
+trackingtime2hrs = Name:
+trackingtime5hrs = Name:
+trackingtime1Day= Name:
+trackingtime2Days = Name:
+trackingtime3Days = Name:
+trackingtime5Days = Name:
+trackingtime10Days = Name:
+trackingtime30Days = Name:
+btnSendBT = Name:
+btnDeleteDraft = Name:Delete Draft
+btnSaveDraft = Name:Save Draft
+btnCancelDraft = Name:Cancel
+popupEmptySubject = Name:This message has no subject. Do you want to send it anyway?
