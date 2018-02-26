@@ -1,6 +1,6 @@
 package Keywords;
 
-import Locators.SignUpRepository;
+import Locators.SignUp_Repository;
 import Report.RemoteReporter;
 import Support.ElementInspector;
 import io.appium.java_client.MobileElement;
@@ -11,12 +11,12 @@ import java.util.concurrent.TimeUnit;
 public class SignUpKeywords {
     ElementInspector inspector;
     RemoteReporter reporter;
-    SignUpRepository signup;
+    SignUp_Repository signup;
 
     public SignUpKeywords(ElementInspector inspector, RemoteReporter reporter){
         this.inspector = inspector;
         this.reporter = reporter;
-        this.signup = new SignUpRepository();
+        this.signup = new SignUp_Repository();
 
     }
     public void SigUpSuccess() {

@@ -5,10 +5,10 @@ import java.util.Properties;
 import Environments.Constants;
 import org.openqa.selenium.By;
 
-public class SignInRepository {
+public class SignIn_Repository {
     public static Properties SignInScreen;
 
-    public SignInRepository()
+    public SignIn_Repository()
     {
         try{
         //Declaring String variable for storing Object Repository path

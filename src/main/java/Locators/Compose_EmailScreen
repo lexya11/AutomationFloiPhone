@@ -1,0 +1,33 @@
+
+
+# Email Compose Screen
+btnCancel=Cancel
+btnBearTrack=//XCUIElementTypeNavigationBar[1]/XCUIElementTypeButton[2]
+btnSend=//XCUIElementTypeNavigationBar[1]/XCUIElementTypeButton[3]
+btnExpand_Collapse=\uE09D
+titleEmail=New Email
+tbFrom=From:
+tbTo=To:
+tbCc=Cc:
+tbBcc=Bcc:
+tbSubject=//XCUIElementTypeTable[1]/XCUIElementTypeCell[5]/XCUIElementTypeTextField[1]
+tbContent=//XCUIElementTypeWebView[1]/XCUIElementTypeOther[1]
+popupBearTrack=Remind me if I don't get a reply within
+
+trackingtime1hr=1 hr
+trackingtime2hrs=2 hrs
+trackingtime5hrs=5 hrs
+trackingtime1Day=1 day
+trackingtime2Days=2 days
+trackingtime3Days=3 days
+trackingtime5Days=5 days
+trackingtime10Days=10 days
+trackingtime30Days=30 days
+
+btnSendBT=Send
+btnDeleteDraft=Delete Draft
+btnSaveDraft=Save Draft
+btnCancelDraft=Cancel
+popupEmptySubject=This message has no subject. Do you want to send it anyway?
+popupInvalidEmail=Invalid email address
+btnOK=OK

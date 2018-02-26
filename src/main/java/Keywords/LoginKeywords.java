@@ -10,12 +10,12 @@ import java.util.concurrent.TimeUnit;
 public class LoginKeywords {
     ElementInspector inspector;
     RemoteReporter reporter;
-    SignInRepository login;
+    SignIn_Repository login;
 
     public LoginKeywords(ElementInspector inspector, RemoteReporter reporter) {
         this.inspector = inspector;
         this.reporter = reporter;
-        this.login = new SignInRepository();
+        this.login = new SignIn_Repository();
     }
 
     public void loginSuccess(String userName, String passWord) {
@@ -41,6 +41,8 @@ public class LoginKeywords {
 
             //btnLogin
             inspector.findTouchActionTap(30,275);
+            MobileElement Startflo = inspector.findElement(login.getElement("StartFlo"));
+            Startflo.click();
 
             reporter.report("Ended Sign in Success keyword");
         } else {

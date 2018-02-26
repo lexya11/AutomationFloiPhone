@@ -1,0 +1,14 @@
+# Email view
+
+btnEmailiCon=icon 1
+btnCompose=\uE04E
+
+
+# IMAP FOLDER
+
+AllAccountsInboxes=All Accounts Inboxes
+AllAccountsSent=All Accounts Sent
+AllSent=All Sent
+CheckEmailSent=Subject Email
+CheckEmailSentByBearTrack=Send Email by Bear Track
+AllDrafts=All Drafts

@@ -8,3 +8,4 @@ popupSignInFail_1= Name:Incorrect password/username. Please try again
 popupSignInFail_2 = Name:Password is invalid. Password length must be between 6 and 32 characters.
 btnOK = Name:OK
 backicon = Name:\uE099
+StartFlo = Name:Start Flo

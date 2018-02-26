@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class SignUpRepository {
+public class SignUp_Repository {
     public static Properties SignUpScreen;
-    public  SignUpRepository(){
+    public SignUp_Repository(){
         try {
             //Declaring String variable for storing Object Repository path
             String ElementSignUpScreen = Constants.ElementSignUpScreen;
