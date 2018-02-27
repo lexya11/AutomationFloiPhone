@@ -42,9 +42,9 @@ public class Email_ComposeKeywords{
             Subjectfield.sendKeys("Subject Email");
             MobileElement Contentfield = inspector.findElementByXPath(composeEmail.tbContent);
             Contentfield.sendKeys("Send email from Flo iOS");
-//          MobileElement SendIcon = inspector.findElementByXPath(composeEmail.btnSend);
-//          SendIcon.click();
-            inspector.findTouchActionTap(331,20); //Send Location
+            MobileElement SendIcon = inspector.findElementByXPath(composeEmail.btnSend);
+            SendIcon.click();
+//          inspector.findTouchActionTap(331,20); //Send Location
             reporter.report("=== Check Email has been sent ===");
             inspector.findTouchActionTap(88,20); //Local IMAP location
             MobileElement AllSent = inspector.findElementByName(emailview.AllSent);
@@ -69,7 +69,6 @@ public class Email_ComposeKeywords{
 
     public void SendEmailByBearTrack ()
     {
-        inspector.findTouchActionTap(0,20);
         MobileElement EmailIcon = inspector.findElementByName(emailview.btnEmailiCon);
         EmailIcon.click();
         reporter.report("=== Started Send Email Bear Track Success Keywords ===");
@@ -92,9 +91,9 @@ public class Email_ComposeKeywords{
             MobileElement Contentfield = inspector.findElementByXPath(composeEmail.tbContent);
             Contentfield.sendKeys("Send email by Bear Track from Flo iOS");
 
-//        MobileElement BearTrackIcon = inspector.findElementByXPath(composeEmail.btnBearTrack);
-//        BearTrackIcon.click();
-            inspector.findTouchActionTap(287,20); //Bear Track Location
+            MobileElement BearTrackIcon = inspector.findElementByXPath(composeEmail.btnBearTrack);
+            BearTrackIcon.click();
+            //inspector.findTouchActionTap(287,20); //Bear Track Location
             reporter.report("=== Select tracking time email is 1 hour ===");
             MobileElement Tracking1hr = inspector.findElementByName(composeEmail.trackingtime1hr);
             Tracking1hr.click();
@@ -123,7 +122,6 @@ public class Email_ComposeKeywords{
 
     }
     public void SendEmailFailure(){
-        inspector.findTouchActionTap(0,20); //Home Location
         MobileElement EmailIcon = inspector.findElementByName(emailview.btnEmailiCon);
         EmailIcon.click();
         reporter.report("=== Started Send Email Failure Keywords ===");
@@ -136,7 +134,9 @@ public class Email_ComposeKeywords{
             Tofield.sendKeys("hoathuytien",Keys.ENTER);
             MobileElement Subjectfield = inspector.findElementByXPath(composeEmail.tbSubject);
             Subjectfield.sendKeys("Subject Email");
-            inspector.findTouchActionTap(331,20); //Send Location
+            MobileElement SendIcon = inspector.findElementByXPath(composeEmail.btnSend);
+            SendIcon.click();
+           // inspector.findTouchActionTap(331,20); //Send Location
             MobileElement popupInvalidEmail = inspector.findElementByName(composeEmail.popupInvalidEmail);
             if (popupInvalidEmail.isDisplayed() == true){
                 reporter.report("=== Show popup Invalid Email address ===");
@@ -148,7 +148,6 @@ public class Email_ComposeKeywords{
         }
     }
     public void DraftEmail () {
-        inspector.findTouchActionTap(0,20); //Home Location
         MobileElement EmailIcon = inspector.findElementByName(emailview.btnEmailiCon);
         EmailIcon.click();
         MobileElement ComposeIcon = inspector.findElementByName(emailview.btnCompose);

@@ -15,7 +15,7 @@ public class SignInScripts extends SetupServer{
 
     @BeforeMethod
     public void setUp(){
-        capabilities = new TabletCapabilities("iPhone 8 Plus");
+        capabilities = new TabletCapabilities("iPhone 6s");
         // capabilities = new TabletCapabilities("iPad Air SouceLabs");
         super.SetUp(capabilities);
     }
@@ -25,7 +25,7 @@ public class SignInScripts extends SetupServer{
     public void signin() throws  Exception  {
         loginPage = new LoginKeywords(this, reporter);
         loginPage.LoginFail();
-        loginPage.loginSuccess("bi_test04", "123123");
+        loginPage.loginSuccess("bi_test01", "123123");
 
     }
 

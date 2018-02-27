@@ -63,22 +63,6 @@ public class Compose_EmailRepository {
             titleEmail = properties.getProperty("titleEmail");
             popupInvalidEmail = properties.getProperty("popupInvalidEmail");
             btnOK = properties.getProperty("btnOK");
-//            FileReader File = new FileReader("." + ElementEmailCompose);
-//            System.out.println("json file = " + dir + ElementEmailCompose);
-//
-//            JSONObject obj = (JSONObject) parser.parse(File);
-//            JSONObject Key = (JSONObject) obj.get(key);
-//
-//            btnEmailiCon = (String) Key.get("btnEmailiCon");
-//            btnCompose = (String) Key.get("btnCompose");
-//            tbTo = (String) Key.get("tbTo");
-//            tbSubject = (String) Key.get("tbSubject");
-//            btnSend = (String) Key.get("btnSend");
-//            tbContent = (String) Key.get("tbContent");
-//            btnBearTrack = (String) Key.get("btnBearTrack");
-//            trackingtime1hr = (String) Key.get("trackingtime1hr");
-//            btnSendBT = (String) Key.get("btnSendBT");
-
         }catch (Exception e){
             e.printStackTrace();
         }

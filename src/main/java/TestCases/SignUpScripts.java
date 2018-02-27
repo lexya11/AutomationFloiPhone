@@ -12,7 +12,7 @@ public class SignUpScripts extends SetupServer{
     SignUpKeywords signup;
     @BeforeMethod
     public void Setup(){
-        capabilities = new TabletCapabilities("iPhone 8 Plus");
+        capabilities = new TabletCapabilities("iPhone 6s");
         super.SetUp(capabilities);
     }
     @Test
@@ -28,7 +28,6 @@ public class SignUpScripts extends SetupServer{
 
     @AfterMethod
     public void cleanUp(){
-    //  driver.runAppInBackground(2);
         driver.closeApp();
     }
 }

@@ -26,10 +26,10 @@ public class EmailView_Repository {
             System.out.println("Repository file = " + dir + ElementEmailView);
             btnEmailiCon = properties.getProperty("btnEmailiCon");
             AllAccountsInboxes = properties.getProperty("AllAccountsInboxes");
+            AllAccountsSent = properties.getProperty("AllAccountsSent");
             AllSent = properties.getProperty("AllSent");
             CheckEmailSent = properties.getProperty("CheckEmailSent");
             btnCompose = properties.getProperty("btnCompose");
-            AllAccountsSent = properties.getProperty("AllAccountsSent");
             CheckEmailSentByBearTrack = properties.getProperty("CheckEmailSentByBearTrack");
             AllDrafts = properties.getProperty("AllDrafts");
         } catch (Exception e) {
