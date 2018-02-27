@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12afa8cb-e212-4df1-81a8-8e8539e73f99" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Keywords/Email_ComposeKeywords.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Locators/Compose_EmailRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Locators/Compose_EmailScreen" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Locators/EmailView" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Locators/EmailView_Repository.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Keywords/EmailComposeKeywords.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Locators/ComposeEmailRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Locators/ComposeEmailScreen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Locators/EmailComposeRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Locators/EmailComposeScreens" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Locators/SignInRepository.java" afterPath="$PROJECT_DIR$/src/main/java/Locators/SignIn_Repository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Locators/SignInScreens" afterPath="$PROJECT_DIR$/src/main/java/Locators/SignIn_Screen" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Locators/SignUpRepository.java" afterPath="$PROJECT_DIR$/src/main/java/Locators/SignUp_Repository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Locators/SignUpScreens" afterPath="$PROJECT_DIR$/src/main/java/Locators/SignUp_Screen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Environments/Constants.class" afterPath="$PROJECT_DIR$/target/classes/Environments/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Keywords/LoginKeywords.class" afterPath="$PROJECT_DIR$/target/classes/Keywords/LoginKeywords.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Environments/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/Environments/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Environments/jsonDevices" afterPath="$PROJECT_DIR$/src/main/java/Environments/jsonDevices" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Keywords/LoginKeywords.java" afterPath="$PROJECT_DIR$/src/main/java/Keywords/LoginKeywords.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Keywords/SignUpKeywords.java" afterPath="$PROJECT_DIR$/src/main/java/Keywords/SignUpKeywords.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/TestCases/ComposeEmail.java" afterPath="$PROJECT_DIR$/src/main/java/TestCases/ComposeEmail.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -181,7 +160,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-2" />
     <option name="y" value="23" />
     <option name="width" value="1366" />
     <option name="height" value="745" />
@@ -577,7 +557,7 @@
       <workItem from="1519265506909" duration="23599000" />
       <workItem from="1519352901596" duration="19627000" />
       <workItem from="1519609353770" duration="1415000" />
-      <workItem from="1519616492713" duration="284000" />
+      <workItem from="1519616492713" duration="968000" />
     </task>
     <task id="LOCAL-00001" summary="Email compose">
       <created>1519291732916</created>
@@ -586,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519291732919</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1519616835717</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1519616835718</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -622,11 +609,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53122000" />
+    <option name="totallyTimeSpent" value="53806000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="745" extended-state="6" />
-    <editor active="true" />
+    <frame x="-2" y="23" width="1366" height="745" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -696,7 +682,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Email compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="Email compose" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -756,6 +743,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -826,6 +814,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -851,6 +840,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,6 +999,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,6 +1016,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
