@@ -1,5 +1,3 @@
-
-
 # Email Compose Screen
 btnCancel=Cancel
 btnBearTrack=//XCUIElementTypeNavigationBar[1]/XCUIElementTypeButton[2]
