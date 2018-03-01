@@ -1,0 +1,27 @@
+#Home Screen
+SettingIcon=\uE01A
+Clock_Midnight=Midnight
+Clock_Noon=Noon
+RecentCollections=RecentCollections
+EmailIcon=icon 1
+EventIcon=icon 2
+ToDoIcon=icon 3
+ContactIcon=icon 4
+NoteIcon=icon 5
+CollectionIcon=icon 6
+popupGlobal=//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]
+Global_Email=Email
+Global_Event=Event
+Global_ToDo=ToDo
+Global_Contact=Contact
+Global_Note=Note
+Global_Collection=Collection
+PlusIcon=\uE066
+
+#Create New Object From Global
+btnCancel=Cancel
+CreateNewEvent=New Event
+CreateNewToDo=New ToDo
+CreateNewContact=New Contact
+CreateNewNote=New Note
+CreateNewCollection=New Collection

@@ -6,6 +6,8 @@ public final class Constants {
     public static String ElementSignUpScreen = "/src/main/java/Locators/SignUp_Screen";
     public static String ElementEmailComposeScreen = "/src/main/java/Locators/Compose_EmailScreen";
     public static String ElementEmailView = "/src/main/java/Locators/EmailView";
+    public static String ElementHomeScreen = "/src/main/java/Locators/Home_Screen";
+    public static String ElementSettingsScreen = "/src/main/java/Locators/Settings_Screen";
 
     // Capabilities constant variables
     public static final String app = "/Users/Bi/Desktop/testappium/FloQC.app";
