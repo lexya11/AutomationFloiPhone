@@ -2,7 +2,8 @@
 SettingIcon=\uE01A
 Clock_Midnight=Midnight
 Clock_Noon=Noon
-RecentCollections=RecentCollections
+Clock=//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]
+RecentCollections=Recent Collections
 EmailIcon=icon 1
 EventIcon=icon 2
 ToDoIcon=icon 3
@@ -18,6 +19,9 @@ Global_Note=Note
 Global_Collection=Collection
 PlusIcon=\uE066
 
+#RecentCollection
+GeneralCollection=General
+
 #Create New Object From Global
 btnCancel=Cancel
 CreateNewEvent=New Event
@@ -25,3 +29,12 @@ CreateNewToDo=New ToDo
 CreateNewContact=New Contact
 CreateNewNote=New Note
 CreateNewCollection=New Collection
+
+NoneRecentCollections=//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[4]
+
+#CollectionScreen
+CheckopenGerenalCollection=General
+BackinCollectionScreen=\uE099
+#CreateNewEventScreen
+EventTitlefield=//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeTextField
+BtnDone=Done

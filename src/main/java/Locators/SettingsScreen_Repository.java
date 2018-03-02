@@ -9,7 +9,9 @@ import java.util.Properties;
 public class SettingsScreen_Repository {
     public String HomeiCon;
     public String LbSettings;
-
+    public String Customization;
+    public String toggleCollectionsOnHome;
+    public String BtnSettings;
     public SettingsScreen_Repository(){
         String ElementSettingsScreen = Constants.ElementSettingsScreen;
         Properties properties =new Properties();
@@ -21,6 +23,9 @@ public class SettingsScreen_Repository {
             System.out.println("Repository file = " + dir + ElementSettingsScreen);
             HomeiCon = properties.getProperty("HomeiCon");
             LbSettings = properties.getProperty("LbSettings");
+            Customization = properties.getProperty("Customization");
+            toggleCollectionsOnHome = properties.getProperty("toggleCollectionsOnHome");
+            BtnSettings = properties.getProperty("BtnSettings");
         } catch (Exception e) {
             e.printStackTrace();
         }

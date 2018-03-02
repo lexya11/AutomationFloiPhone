@@ -30,6 +30,13 @@ public class HomeScreen_Repository {
     public String CreateNewNote;
     public String CreateNewCollection;
     public String btnCancel;
+    public String Clock;
+    public String NoneRecentCollections;
+    public String GeneralCollection;
+    public String CheckopenGerenalCollection;
+    public String BackinCollectionScreen;
+    public String EventTitlefield;
+    public String BtnDone;
     public HomeScreen_Repository (){
         String ElementHomeScreen = Constants.ElementHomeScreen; //Properties
         Properties properties = new Properties();
@@ -63,6 +70,16 @@ public class HomeScreen_Repository {
             CreateNewContact = properties.getProperty("CreateNewContact");
             CreateNewCollection = properties.getProperty("CreateNewCollection");
             btnCancel = properties.getProperty("btnCancel");
+            Clock = properties.getProperty("Clock");
+            NoneRecentCollections = properties.getProperty("NoneRecentCollections");
+
+            GeneralCollection = properties.getProperty("GeneralCollection");
+            CheckopenGerenalCollection = properties.getProperty("CheckopenGerenalCollection");
+            BackinCollectionScreen = properties.getProperty("BackinCollectionScreen");
+
+            EventTitlefield = properties.getProperty("EventTitlefield");
+            BtnDone = properties.getProperty("BtnDone");
+
         }catch (Exception e){
             e.printStackTrace();
         }

@@ -28,6 +28,7 @@ public class SignUpKeywords {
         NewUSer.click();
         MobileElement btnSignUp = inspector.findElement(signup.getElement("btnSignUp"));
         NewUSer.click();
+        // Check Sign Up View
         if(btnSignUp.isDisplayed() == true){
             reporter.report("Show Sign Up screen correctly!");
             reporter.report("Input username & password");
@@ -39,11 +40,11 @@ public class SignUpKeywords {
             MobileElement tbPassWord = inspector.findElement(signup.getElement("tbPassWord"));
             tbPassWord.clear();
             tbPassWord.setValue("123123");
-            inspector.findTouchActionTap(30,275);
+            inspector.findTouchActionTap(30,275); // Sign Up button
             reporter.report("Ended Sign Up Success");
         }
         else {
-            reporter.report("Stop Sign Up Success");
+            reporter.report("FAIL - Stop Sign Up Success");
         }
     }
     public void SignUpFailure() {
@@ -52,6 +53,7 @@ public class SignUpKeywords {
         MobileElement NewUSer = inspector.findElement(signup.getElement("btnNewUser_SignUp"));
         NewUSer.click();
         MobileElement btnSignUp = inspector.findElement(signup.getElement("btnSignUp"));
+        // Check Sign Up view
         if(btnSignUp.isDisplayed() == true) {
             reporter.report("Started Sign Up Failure");
             MobileElement tbUserName = inspector.findElement(signup.getElement("tbUserName"));
@@ -65,6 +67,7 @@ public class SignUpKeywords {
                 e.printStackTrace();
             }
             MobileElement popupSignUpFail_3 = inspector.findElement(signup.getElement("popupSignUpFail_3"));
+            // Check Username has special character
             if (popupSignUpFail_3.isDisplayed() == true){
                 reporter.report("Show warning:\nOnly letters, numbers, underscores, and one period are allowed.");
                 MobileElement btnOK = inspector.findElement(signup.getElement("btnOK"));
@@ -73,13 +76,14 @@ public class SignUpKeywords {
                 reporter.report("Input Existing Username");
                 tbUserName.clear(); tbUserName.sendKeys("bi_test04");
                 tbPassWord.clear(); tbPassWord.setValue("123123");
-                inspector.findTouchActionTap(30,275);
+                inspector.findTouchActionTap(30,275); // Sign Up button
                 try {
                     TimeUnit.SECONDS.sleep(30);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 MobileElement popupSignUpFail_0 = inspector.findElement(signup.getElement("popupSignUpFail_0"));
+                // Check input Existing Username
                 if (popupSignUpFail_0.isDisplayed() == true){
                     reporter.report("Show warning:\nSorry, it appears that this username is already registered by someone else. Try another?");
                     btnOK.click();
@@ -93,6 +97,7 @@ public class SignUpKeywords {
                         e.printStackTrace();
                     }
                     MobileElement popupSignUpFail_1 = inspector.findElement(signup.getElement("popupSignUpFail_1"));
+                    // Check Only input Username 2 characters
                     if (popupSignUpFail_1.isDisplayed() == true){
                         reporter.report("Show warning:\nUsername must have at least 3 characters");
                         btnOK.click();
@@ -100,13 +105,14 @@ public class SignUpKeywords {
                         reporter.report("Input Password have 2 characters");
                         tbUserName.clear(); tbUserName.sendKeys("bi_test");
                         tbPassWord.clear(); tbPassWord.setValue("123");
-                        inspector.findTouchActionTap(30,275);
+                        inspector.findTouchActionTap(30,275); // Sign Up button
                         try {
                             TimeUnit.SECONDS.sleep(3);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
                         MobileElement popupSignUpFail_2 = inspector.findElement(signup.getElement("popupSignUpFail_2"));
+                        // Check Only input Password 2 characters
                         if (popupSignUpFail_2.isDisplayed() == true) {
                             reporter.report("Show warning:\nPassword is invalid. Password length must be between 6 and 32 characters.");
                             btnOK.click();
@@ -120,6 +126,7 @@ public class SignUpKeywords {
                                 e.printStackTrace();
                             }
                             MobileElement popupEmptyUsername = inspector.findElement(signup.getElement("popupEmptyUsername"));
+                            //Check NOT input Username
                             if(popupEmptyUsername.isDisplayed() == true){
                                 reporter.report("Show warning:\nUsername is empty");
                                 btnOK.click();
@@ -129,7 +136,7 @@ public class SignUpKeywords {
                     }
                 }
             } else {
-                reporter.report("Stop Sign Up Failure");
+                reporter.report("FAIL - Stop Sign Up Failure");
             }
         }
 

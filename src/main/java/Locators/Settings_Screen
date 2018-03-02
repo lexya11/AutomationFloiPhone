@@ -1,4 +1,10 @@
 
-
+#Settings Screen
 HomeiCon=//XCUIElementTypeNavigationBar[@name="Settings"]/XCUIElementTypeButton
 LbSettings=Settings
+BtnSettings=Settings
+Customization=//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]
+#CUSTOMIZATION
+CollectionsOnHome=Collections on Home
+toggleCollectionsOnHome=//XCUIElementTypeSwitch[@name="Collections on Home"]
+

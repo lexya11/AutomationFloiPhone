@@ -17,8 +17,11 @@ public class HomeScreensScripts extends SetupServer {
     @Test
     public void HomeScreen(){
         Home = new HomeScreen_Keywords(this, reporter);
-//        Home.OpenPlusicon();
-//        Home.OpenSettingsScreen();
+        Home.OpenPlusicon();
+        Home.OpenSettingsScreen();
+        Home.CreateNewEventFromClock();
+        Home.CollectionsonHome();
+        Home.NoneCollectionsonHome();
         Home.ActioninBottombar();
     }
 

@@ -19,18 +19,22 @@ public class SignInScripts extends SetupServer{
         // capabilities = new TabletCapabilities("iPad Air SouceLabs");
         super.SetUp(capabilities);
     }
-
-
     @Test
-    public void signin() throws  Exception  {
+    public void SignInFail() {
         loginPage = new LoginKeywords(this, reporter);
         loginPage.LoginFail();
-        loginPage.loginSuccess("bi_test01", "123123");
 
     }
 
+    @Test
+    public void signinSuccess()   {
+        loginPage = new LoginKeywords(this, reporter);
+        loginPage.loginSuccess("bi_test03", "123123");
+
+    }
+
+
     @AfterMethod
     public void cleanUp(){
-        driver.closeApp();
     }
 }
