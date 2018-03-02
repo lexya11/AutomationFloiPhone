@@ -1,0 +1,4 @@
+
+
+HomeiCon=//XCUIElementTypeNavigationBar[@name="Settings"]/XCUIElementTypeButton
+LbSettings=Settings
